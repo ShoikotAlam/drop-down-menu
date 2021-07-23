@@ -1,0 +1,86 @@
+* {
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('back.jpeg');
+    background-size: cover;
+    background-position: center;
+    font-size: 1.25rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar {
+    background-color: rgba(6, 6, 248, 0.932);
+    border: 2px solid black;
+    text-align: center;
+    margin: 10px;
+}
+.navbar ul {
+    display: inline-flex;
+    list-style: none;
+    
+}
+.navbar ul li {
+    width: 150px;
+    margin: 15px;
+    padding: 10px;
+}
+.navbar ul li:nth-child(5) {
+    width: 165px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    
+}
+.active, .navbar ul li:hover {
+    background-color: rgb(81, 81, 187);
+    border-radius: 3px;
+}
+.navbar, .fas {
+    margin-right: 5px;
+}
+.sub-menu1 {
+    display: none;
+}
+.navbar ul li:hover .sub-menu1 {
+    display: block;
+    position: absolute;
+    background-color:rgba(6, 6, 248, 0.932); 
+    margin-top: 15px;
+    margin-left: -10px;
+}
+.navbar ul li:hover .sub-menu1 ul {
+    display: block;
+    margin: 10px;
+}
+.navbar ul li:hover .sub-menu1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 2px dotted white;
+    border-radius: 0;
+    background: transparent;
+    text-align: left;
+
+}
+.navbar ul li:hover .sub-menu1 ul li:last-child {
+    border-bottom: none;
+}
+.navbar ul li:hover .sub-menu1 ul li a:hover {
+    color:rgb(216, 134, 11)
+}
+.sub-menu2 {
+    display: none;
+}
+.fa-angle-right {
+    float: right;
+}
+.hover-me:hover .sub-menu2 {
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: rgba(6, 6, 248, 0.932);
+}
